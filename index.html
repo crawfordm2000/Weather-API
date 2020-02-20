@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="key.js"></script>
+</head>
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Weather Wizard</div>
+        </ons-toolbar>
+        <section class="section">
+            <ons-input id="txtCity" modifier="underbar" placeholder="City Name" class="clearance">
+            </ons-input>
+            <ons-button modifier="large" id="btnWeather">Get Weather</ons-button>
+        </section>
+        <section class="section" id="result"></section>
+    </ons-page>
+    <script src="weather.js"></script>
+</body>
+</html>
